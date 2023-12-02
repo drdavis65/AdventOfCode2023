@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// 12 red, 13 green, 14 blue
+// part 1: 12 red, 13 green, 14 blue
 
 int main() {
   string filename = "games.txt";
