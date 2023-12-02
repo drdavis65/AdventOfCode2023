@@ -51,10 +51,13 @@ int main() {
       // lambda function to remove extra characters
       color.erase(std::remove_if(color.begin(), color.end(), 
         [](unsigned char x) { return x == ',' || x == ';'; }), color.end());
-      
+
+      // find maximum, replace if new found number is larger
       if(colors[color] < number) {
         colors[color] = number;
       }
+
+      // skip unneeded characters
       if(iss.peek() == ',' || iss.peek() == ';') {
         iss.ignore();
       }
