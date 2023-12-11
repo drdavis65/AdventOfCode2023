@@ -72,38 +72,24 @@ int main() {
       }
     } else if (state == ParsingState::seed_soil) {
       iss >> dest >> src >> range;
-      std::cout << "SeedSoil mapping: " << dest << " " << src << " " << range
-                << std::endl;
       seed_soil.push_back({dest, src, range});
     } else if (state == ParsingState::soil_fert) {
       iss >> dest >> src >> range;
-      std::cout << "SoilFert mapping: " << dest << " " << src << " " << range
-                << std::endl;
       soil_fert.push_back({dest, src, range});
     } else if (state == ParsingState::fert_water) {
       iss >> dest >> src >> range;
-      std::cout << "FertWater mapping: " << dest << " " << src << " " << range
-                << std::endl;
       fert_water.push_back({dest, src, range});
     } else if (state == ParsingState::water_light) {
       iss >> dest >> src >> range;
-      std::cout << "WaterLight mapping: " << dest << " " << src << " " << range
-                << std::endl;
       water_light.push_back({dest, src, range});
     } else if (state == ParsingState::light_temp) {
       iss >> dest >> src >> range;
-      std::cout << "LightTemp mapping: " << dest << " " << src << " " << range
-                << std::endl;
       light_temp.push_back({dest, src, range});
     } else if (state == ParsingState::temp_humidity) {
       iss >> dest >> src >> range;
-      std::cout << "TempHumid mapping: " << dest << " " << src << " " << range
-                << std::endl;
       temp_humidity.push_back({dest, src, range});
     } else if (state == ParsingState::humidity_location) {
       iss >> dest >> src >> range;
-      std::cout << "HumidityLocation mapping: " << dest << " " << src << " "
-                << range << std::endl;
       humidity_location.push_back({dest, src, range});
     }
   }
