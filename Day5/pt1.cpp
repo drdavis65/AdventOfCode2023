@@ -36,7 +36,6 @@ int main() {
   ParsingState state = ParsingState::None;
 
   while (getline(file, line)) {
-    std::cout << "Reading line: " << line << std::endl;
     if (line.empty()) {
       std::cout << "Encountered blank line. Resetting state." << std::endl;
       state = ParsingState::None;
